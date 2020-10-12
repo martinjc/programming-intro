@@ -17,19 +17,7 @@ It is important when we write code that we make the instructions as clear as pos
 
 To write clear instructions, we need to understand the fundamentals of programming - what we can do with code, how we can do it, and why we would do it that way. 
 
-## Learning to Program
 
-Before we start learning how to code, let's talk about the _process of learning to code_. Some people will find this very easy. Some will find it very hard. Your experience of this may be somewhere in the middle. 
-
-If you'll permit me a short diversion into educational theory, it might help if we discuss the idea of a 'Threshold concept'. As with all things academic there is still some debate about the nature of these concepts, but in general they are ideas that tend to be:
-
--   Troublesome - they can be hard to understand or make sense of
--   Counterintuitive - they can run contrary to your current understanding
--   Integrative - they can reveal links between other concepts and ideas, and may not make sense without those links
--   Transformative - they open up new realms of knowledge once they are understood
--   Irreversible - once you grasp these concepts you are unlikely to forget them or go back to a previous level of understanding
-
-The field of programming is littered with ideas and concepts that fit the definition of 'threshold concepts'. This means that there may be many ideas that you come across while learning to program that you may struggle to get to grips with. I tell you this not in an effort to put you off, but to make you aware of this fact, so that if you are not finding things easy you 
 
 
 <!--alex disable he-her -->
