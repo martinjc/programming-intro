@@ -4,12 +4,29 @@
   "description": "An introductory programming course using general concepts rather than a specific programming language",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "reinstall": "rimraf node_modules && npm cache clean && npm install",
+    "clean": "rimraf public",
+    "start": "npm-run-all --parallel serve watch",
+    "mkdirs": "mkdir -p public",
+    "build:eleventy:dev": "eleventy",
+    "build:eleventy:prod": "eleventy",
+    "build:dev": "npm run build:eleventy:dev",
+    "prebuild:dev": "npm run clean && npm run mkdirs",
+    "prebuild:prod": "npm run clean && npm run mkdirs",
+    "build:prod": "npm run build:eleventy:prod",
+    "preserve": "npm run build:dev",
+    "serve": "browser-sync start -s --files 'public/**/*.(js|css|html)' --ss 'public' --port 8080 --reload-debounce 500",
+    "watch": "npm-run-all --parallel watch:*",
+    "watch:eleventy": "onchange --await-write-finish 4000 'src/**/*.njk' 'src/**/*.md' -- npm run build:eleventy:dev"
   },
   "author": "Martin Chorley",
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.2"
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.2",
+    "browser-sync": "^2.26.12",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.0.2",
+    "rimraf": "^3.0.2"
   }
 }
