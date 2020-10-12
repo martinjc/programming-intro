@@ -140,7 +140,7 @@ set Temp = 88
 
 ## Conclusion.
 
-We store different types of data in variables. Variables have a name/label/identifier that lets us assign values to them, and read those values back again later. Variables are like a box with a label that is like a slate, but not quite either really.
+We store different types of data in variables. Variables have a name/label/identifier that lets us assign values to them, and read those values back again later. Variables are like a box with a label, that is like a slate, but also not quite either really.
 
 [^1]: That one thing might be made up of lots of other things, but we'll gloss over that for now.
 [^2]: The analogy works better if we're looking inside the box to see what's in there, but that's not how we described it initially.
