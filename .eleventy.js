@@ -1,6 +1,10 @@
 module.exports = function(eleventyConfig) {
 
     const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+    const markdownItFootnote = require("markdown-it-footnote");
+    const markdownItEmoji = require("markdown-it-emoji");
+    const markdownIt = require("markdown-it");
+
 
     eleventyConfig.addPassthroughCopy({"src/_root/*.*": "./"});
     
@@ -8,6 +12,19 @@ module.exports = function(eleventyConfig) {
 
     // syntax highlighting
     eleventyConfig.addPlugin(syntaxHighlight);
+
+    // add footnotes and emoji to the markdown parser
+    let markdownLib = markdownIt({
+        html: true,
+        breaks: true,
+        linkify: true,
+        typographer: true,
+    })
+    .use(markdownItFootnote)
+    .use(markdownItEmoji);
+
+    eleventyConfig.setLibrary('md', markdownLib);
+
 
     return {
       dir: {
