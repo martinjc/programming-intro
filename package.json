@@ -1,0 +1,11 @@
+{
+  "name": "programming-intro",
+  "version": "1.0.0",
+  "description": "An introductory programming course using general concepts rather than a specific programming language",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Martin Chorley",
+  "license": "MIT"
+}
