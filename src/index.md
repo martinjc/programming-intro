@@ -1,6 +1,4 @@
 ---
-layout: base
+layout: page
 title: "Introduction to Programming"
 ---
-
-# Introduction to Programming

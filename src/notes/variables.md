@@ -1,9 +1,8 @@
 ---
 layout: page
 title: "Variables"
+order: 3
 ---
-
-# Variables
 
 When we are programming, we need to remember 'something'; a 'value'.
 

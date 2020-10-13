@@ -1,4 +1,8 @@
-## Learning to Program
+---
+layout: page
+title: "Learning to Program"
+order: 2
+---
 
 Before we start learning how to code, let's talk about the _process of learning to code_. Some people will find this straightforward. Some will find it hard. Your experience of this may be at either end of this spectrum, or it may fall somewhere in the middle. The important thing to know is that whatever your experience, it is fine and normal.
 
@@ -6,7 +10,7 @@ You may breeze through the fundamentals of programming handling these ideas with
 
 If you're happy with "don't panic" as an explanation, feel free to skip on to the next bit. If you're interested in why you don't need to panic, read on. If you'll permit us a short diversion into educational theory, there's a couple of things to think about that might help reassure you if you're finding learning to program a bit challenging.
 
-### Threshold Concepts
+## Threshold Concepts
 
 As with all things academic there is still some debate about the nature of what a 'Threshold concept' (Meyer and Land, 2003)[^ref-meyer-land] as applied to programming is, but in general these are ideas that tend to be:
 
@@ -20,20 +24,22 @@ It is understood that the field of programming is littered with ideas that fit t
 
 I tell you that the field is littered with these hurdles not in an effort to put you off, but in the hope that you will recognise these concepts when you come across them, and that this will diminish your concern. If you are struggling to understand the notion of recursion, it is not that you are particularly unintelligent, but that the notion of recursion is a 'threshold' concept, and it may take some time, some effort, and perhaps some further explanation and reflection in order for you to make the particular breakthrough at which it becomes clear and you can move on.
 
-### Difficulties with Learning to Program
+## Difficulties with Learning to Program
 
 There are a series of challenges that a learner must face up to when learning to program. Benedict du Boulay (1986)[^ref-du-boulay] spells these out in "Some difficulties of Learning to Program", and paraphrasing only slightly, they are:
 
+<!--alex disable nuts-->
+
 1. Orientation - as a novice programmer you are lost not only because you do not know how to get where you are going, you do not know where your destination is and what you can accomplish when you get there. What problems can we solve with programming, and what benefits does it bring us. Why is it worth us spending our time on working this all out, when we don't know what the advantages are?
- <!-- alex ignore retext-equality -->
 2. Models - as a novice programmer you may not have the mental models that allow you to describe how a computer operates, how a program runs, how the two relate to one another. Your understanding may be compromised by the use of mental models formed from other subjects and past experiences that run contrary to how the machine and code actually work.
 3. Notation - in order to write code we must understand different levels of notation. Firstly the generic notation that applies to all programming, but then the individual specific codes and grammar that make up whatever programming language we are using. Which notation is generic, and which is specific to an individual language?
 4. Structures - if we can grasp the notation, what fundamental structures exist that allow us to complete common tasks? What known solutions are there for known problems, and how do we choose between them?
 5. Systems - how do we problem solve on a much larger scale? If we can write small chunks of code, how do we design solutions to unknown or complex problems and put these solutions together in an efficient way?
+ <!--alex enable nuts -->
 
 The issue with these five challenges is that they are overlapping to some extent, and must often be tackled at the same time. A further challenge is given by the fact that you are tackling these problems at the beginning of a new course, at the same time as you are dealing with everything else that is going on in your life. This can be a significant challenge.
 
-### Possible solutions
+## Possible solutions
 
 The bad news: there is no silver bullet. I cannot promise that you will read this set of notes and magically understand programming and all the other things that follow. It might be that this _is_ all it will take, and from here on in you will be an accomplished programmer. However, I think this is unlikely without also doing three other things:
 

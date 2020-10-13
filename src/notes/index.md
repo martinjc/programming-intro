@@ -1,9 +1,8 @@
 ---
-layout: base
+layout: page
 title: "Programming"
+order: 1
 ---
-
-# Programming
 
 Programming is the task of writing a set of **clear instructions** to make a computer **perform some task**.
 
@@ -15,10 +14,7 @@ It is important when we write code that we make the instructions as clear as pos
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Today Year 2 learnt the importance of making instructions really clear and easy to follow. Who knew making a jam sandwich would be so difficult?🤷🏼‍♀️🥪 <a href="https://twitter.com/hashtag/instructions?src=hash&amp;ref_src=twsrc%5Etfw">#instructions</a> <a href="https://twitter.com/hashtag/Year2?src=hash&amp;ref_src=twsrc%5Etfw">#Year2</a> <a href="https://t.co/vjM46RYOkO">pic.twitter.com/vjM46RYOkO</a></p>&mdash; MissReeves (@MissReeeves) <a href="https://twitter.com/MissReeeves/status/1313587567137370113?ref_src=twsrc%5Etfw">October 6, 2020</a></blockquote>
 
-To write clear instructions, we need to understand the fundamentals of programming - what we can do with code, how we can do it, and why we would do it that way. 
-
-
-
+To write clear instructions, we need to understand the fundamentals of programming - what we can do with code, how we can do it, and why we would do it that way.
 
 <!--alex disable he-her -->
 

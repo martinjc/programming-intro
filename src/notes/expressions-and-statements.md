@@ -1,9 +1,8 @@
 ---
 layout: page
-title: "Expressions and Statements"
+title: "Statements, Expressions and Operators"
+order: 4
 ---
-
-# Statements, Expressions and Operators
 
 ## Statements
 
@@ -17,7 +16,7 @@ We need to write code that **does something**
 
 **statements** are the building blocks for our code that do these things. Any piece of code we write that has an **effect** is a statement.
 
-A simple assignment statement will assign a value to a variable
+An assignment statement will assign a value to a variable
 
 ```
 set A = 3
@@ -37,7 +36,7 @@ set B = 5
 set C = A + B
 ```
 
-Statements follow each other, and are executed in order
+Statements follow each other, and are carried out in order
 
 Later, we'll look at complex statements that contain other statements and have their own functionality
 
@@ -60,7 +59,7 @@ Expressions do not have effects, they merely produce a value. Statements can con
 
 The operators that we can use in expressions will depend on the programming language we are using, but will typically include:
 
--   simple mathematical operators, for example +, -, \*, /
+-   basic mathematical operators, for example +, -, \*, /
 -   other mathematical operators, for example ^, %
 -   logical operators, for example |, &, !
 -   comparison operators, for example ==, <, >
