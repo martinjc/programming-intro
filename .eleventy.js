@@ -7,6 +7,8 @@ module.exports = function(eleventyConfig) {
 
 
     eleventyConfig.addPassthroughCopy({"src/_root/*.*": "./"});
+    eleventyConfig.addPassthroughCopy({"tmp/css": "css"});
+
     
     eleventyConfig.setDataDeepMerge(true);
 
@@ -24,6 +26,12 @@ module.exports = function(eleventyConfig) {
     .use(markdownItEmoji);
 
     eleventyConfig.setLibrary('md', markdownLib);
+
+    function sortByPageOrder(values) {
+        return values.slice().sort((a, b) => Math.sign(a.data.order - b.data.order))
+    }
+
+    eleventyConfig.addFilter("sortByPageOrder", sortByPageOrder);
 
 
     return {
