@@ -90,4 +90,10 @@ nav {
         padding-bottom: $spacing-unit/8;
         padding-left: $spacing-unit/8;
     }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: $spacing-unit;
+    }
 }
