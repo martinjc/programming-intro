@@ -5,6 +5,10 @@ body {
     background-color: $background-color;
 }
 
+h1 {
+    margin-top: $spacing-unit;
+}
+
 h1,
 p {
     margin-bottom: $spacing-unit;
