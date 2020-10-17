@@ -7,7 +7,7 @@ module.exports = function(eleventyConfig) {
 
 
     eleventyConfig.addPassthroughCopy({"src/_root/*.*": "./"});
-    eleventyConfig.addPassthroughCopy({"tmp/css": "css"});
+    //eleventyConfig.addPassthroughCopy({"tmp/css/main.css": "css/main.css"});
 
     
     eleventyConfig.setDataDeepMerge(true);
