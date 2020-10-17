@@ -46,7 +46,7 @@ Comparison operators might include:
 -   greater than (>) and greater than or equal to (>-)
 -   equal to (==) and not equal to (!=)
 
-Which operators are available and how we write them may depend on the details of the programming language we are using, but the general idea of how they work should stay the same from language to language.
+Which operators are available and how we write them may depend on the details of the programming language we are using, but the general idea of how they work should remain the same from language to language.
 
 ## Branching
 
