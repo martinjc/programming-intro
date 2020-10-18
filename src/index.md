@@ -3,7 +3,7 @@ layout: page
 title: "Introduction to Programming"
 ---
 
-This site contains the notes for a short introductory course in programming which introduces fundamental concepts of programming at a generic level, without getting into the details of specific programming languages.
+This site contains the notes for a short introductory course in programming which introduces fundamental concepts of programming at a generic level, *without getting into the details of specific programming languages*.
 
 It introduces:
 

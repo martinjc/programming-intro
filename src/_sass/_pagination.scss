@@ -19,7 +19,9 @@
             width: 48%;
             float: left;
         }
-        :after {
+        &::after {
+            content: "";
+            display: block;
             clear: both;
         }
     }
