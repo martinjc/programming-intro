@@ -1,5 +1,6 @@
 module.exports = function(eleventyConfig) {
 
+
     const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
     const markdownItFootnote = require("markdown-it-footnote");
     const markdownItEmoji = require("markdown-it-emoji");
@@ -7,6 +8,8 @@ module.exports = function(eleventyConfig) {
 
 
     const insertQuestions = require("./build/questions.js");
+
+    const isProduction = process.env.NODE_ENV === `production`;
 
     eleventyConfig.addPassthroughCopy({"src/_root/*.*": "./"});
     //eleventyConfig.addPassthroughCopy({"tmp/css/main.css": "css/main.css"});
@@ -38,6 +41,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addShortcode("questions", insertQuestions.insertQuestions);
 
     return {
+      pathPrefix: isProduction ? "/programming-intro/" : '/',
       dir: {
         input: "./src",      
         output: "./public",
