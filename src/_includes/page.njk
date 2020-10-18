@@ -9,13 +9,13 @@ layout: base.njk
 
 <div class="container">
     <nav class="sidebar">
-        <a href="/">Home</a>
+        <a href='{{ "/" | url }}'>Home</a>
         <ul>
             {%- for note in collections.notes | sortByPageOrder -%}
-                <li><a href="{{ note.url }}">{{ note.data.title }}</a></li>
+                <li><a href="{{ note.url | url }}">{{ note.data.title }}</a></li>
             {%- endfor -%}
         </ul>
-        <a href="/about/">About</a>
+        <a href="{{ '/about/' | url }}">About</a>
     </nav>
 
     <div class="content">
