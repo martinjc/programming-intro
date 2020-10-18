@@ -6,6 +6,8 @@ module.exports = function(eleventyConfig) {
     const markdownIt = require("markdown-it");
 
 
+    const insertQuestions = require("./build/questions.js");
+
     eleventyConfig.addPassthroughCopy({"src/_root/*.*": "./"});
     //eleventyConfig.addPassthroughCopy({"tmp/css/main.css": "css/main.css"});
 
@@ -33,6 +35,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addFilter("sortByPageOrder", sortByPageOrder);
 
+    eleventyConfig.addShortcode("questions", insertQuestions.insertQuestions);
 
     return {
       dir: {
