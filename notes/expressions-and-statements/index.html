@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Statements, Expressions and Operators</title>
+
+    <meta name="description" content="">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#d3374a">
+
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Statements, Expressions and Operators">
+    <meta property="og:site_name" content="Introduction to Programming">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:author" content="Martin Chorley">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@martinjc">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="Statements, Expressions and Operators">
+
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Scope+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css">
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</head>
+  <body>
+    <header>
+</header>
+    <header>
+    <h1> <a href="">
+            Statements, Expressions and Operators
+        </a></h1>
+</header>
+
+<div class="container">
+    <nav class="sidebar">
+        <a href="/">Home</a>
+        <ul><li><a href="/notes/">Programming</a></li><li><a href="/notes/learning-to-program/">Learning to Program</a></li><li><a href="/notes/variables/">Variables</a></li><li><a href="/notes/expressions-and-statements/">Statements, Expressions and Operators</a></li><li><a href="/notes/conditions-and-branching/">Conditions and Branching</a></li><li><a href="/notes/iteration/">Iteration</a></li><li><a href="/notes/pseudocode/">Pseudocode and Comments</a></li></ul>
+        <a href="/about/">About</a>
+    </nav>
+
+    <div class="content">
+        <h2>Statements</h2>
+<p>We need to write code that <strong>does something</strong></p>
+<ul>
+<li>create a variable</li>
+<li>assign a value to a variable</li>
+<li>run a separate piece of code elsewhere</li>
+<li>print something out to the screen</li>
+<li>pass some value on to another piece of code</li>
+</ul>
+<p><strong>statements</strong> are the building blocks for our code that do these things. Any piece of code we write that has an <strong>effect</strong> is a statement.</p>
+<p>An assignment statement will assign a value to a variable</p>
+<pre><code>set A = 3
+</code></pre>
+<p>A more complex assignment statement will evaluate an expression to assign a value to a variable</p>
+<pre><code>set A = 3 - 2
+</code></pre>
+<p>Multiple statements combine to create more complex functionality</p>
+<pre><code>set A = 3 - 2
+set B = 5
+set C = A + B
+</code></pre>
+<p>Statements follow each other, and are carried out in order</p>
+<p>Later, we’ll look at complex statements that contain other statements and have their own functionality</p>
+<ul>
+<li>loop statements that repeat code, or iterate (for, while)</li>
+<li>branching statements that allow code to make decisions (if, if-else)</li>
+</ul>
+<p>the names of these complex statements (for, while, if, if-else) are often reserved. This means that they cannot be used for other purposes in our code - for example we usally cannot use ‘for’ as a variable name.</p>
+<h2>Expressions</h2>
+<p>Expressions are pieces of code that will be <strong>evaluated</strong> to determine their <strong>value</strong></p>
+<ul>
+<li>a mathematical operation</li>
+<li>that applies operators to the values stored in variables</li>
+<li>and provides a result</li>
+</ul>
+<p>Expressions do not have effects, they merely produce a value. Statements can contain expressions, which means that the results of expressions can be used in our statements.</p>
+<h2>Operators</h2>
+<p>The operators that we can use in expressions will depend on the programming language we are using, but will typically include:</p>
+<ul>
+<li>basic mathematical operators, for example +, -, *, /</li>
+<li>other mathematical operators, for example ^, %</li>
+<li>logical operators, for example |, &amp;, !</li>
+<li>comparison operators, for example ==, &lt;, &gt;</li>
+</ul>
+<p>Operators can be classified by how many things they operate on. Most (but not all) operators are binary, they operate on two values (or ‘operands’). Unary operators only operate on a single value. Ternary operators operate on 3 operands.</p>
+<p>Operators can be described by where they are placed. Prefix operators appear before their operand(s). Infix operators appear between their operands. Postfix operators appear after their operands.</p>
+<p>The mathematical operators (addition, subtraction, multiplication and division) are all binary operators and are typically (though not always) infix:</p>
+<pre><code>set A = 3 + 4
+set B = A - 6
+</code></pre>
+<p>It is possible sometimes to use mathematical operators as unary operators, for example, a unary prefix ‘-’ operator</p>
+<pre><code>set C = -B
+</code></pre>
+<p>^ is sometimes used to raise a number to a higher power</p>
+<pre><code>set D = 2^6
+</code></pre>
+<p>though this also might be done using ‘**’, depending on the language</p>
+<pre><code>set D = 2**6
+</code></pre>
+<p>‘%’ is the modulus operator, it gives the result from integer division</p>
+<pre><code>set E = 5 % 2
+</code></pre>
+<p>E will contain the value 1, since 2 divides 5 twice, with 1 as a remainder.</p>
+<p>The binary logical operators ‘and’ and ‘or’ allow you to combine boolean values (more on this later), while the unary logical operator ‘not’ allows you to negate a binary value (true becomes false, and vice versa).</p>
+<p>Comparison operators allow you to compare values. We can test for equality (is A equal to B?) or whether a value is less than or greater than (or less than or equal to or greater than or equal to) another value.</p>
+<p>You may occasionally see a ternary operator ‘?’, though this is not present in all languages. This has three operands, a boolean expression, a value if the expression is true and a value if the expression is false</p>
+<pre><code>set F = A == B ? 3 : 2
+</code></pre>
+<p>Do not worry too much about this one at the moment, we’ll see it again later.</p>
+<p>Some languages (but not all!) include additional operators that can shorthand some operations, for example ‘++’ or ‘–’ as increment and decrement operators. These can typically be used postfix or prefix, and are shortcuts for ‘this value +1’ or ‘this value -1’</p>
+<pre><code>A = A + 1
+</code></pre>
+<p>in many languages is the same as:</p>
+<pre><code>A++
+</code></pre>
+<p>Whether these operators are used as prefix or postfix determines whether they perform their function before or after expression evaluation. For example:</p>
+<pre><code>set A = 1
+set B = ++A
+</code></pre>
+<p>The prefix ‘++’ operator will be applied to A (increasing the value by 1 to 2) and then the result of that expression stored in B, so both A and B will contain the value ‘2’.</p>
+<pre><code>set A = 1
+set B = A++
+</code></pre>
+<p>The postfix ‘++’ operator will be applied to A <em>after</em> the value of A has been read and stored in B, so in this example A will have the value 2, but B will contain the original value of A before the postfix increment operator was applied, so will contain ‘1’.</p>
+
+        <div class="nextprev"><p class="next">Next: <a href="/notes/conditions-and-branching/">Conditions and Branching</a></p><p class="previous">Previous: <a href="/notes/variables/">Variables</a></p>
+        </div>
+        <div class="comments">
+            <script src="https://utteranc.es/client.js"
+            repo="martinjc/programming-intro"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+            </script>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+document.querySelectorAll('.answer-block').forEach(d => {
+    d.addEventListener('click', (e) => {
+        d.querySelector('.feedback').classList.toggle('hidden');
+        d.classList.toggle('selected');
+    });
+});
+</script>
+    
+  </body>
+</html>

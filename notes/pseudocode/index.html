@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pseudocode and Comments</title>
+
+    <meta name="description" content="">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#d3374a">
+
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pseudocode and Comments">
+    <meta property="og:site_name" content="Introduction to Programming">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:author" content="Martin Chorley">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@martinjc">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="Pseudocode and Comments">
+
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Scope+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css">
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</head>
+  <body>
+    <header>
+</header>
+    <header>
+    <h1> <a href="">
+            Pseudocode and Comments
+        </a></h1>
+</header>
+
+<div class="container">
+    <nav class="sidebar">
+        <a href="/">Home</a>
+        <ul><li><a href="/notes/">Programming</a></li><li><a href="/notes/learning-to-program/">Learning to Program</a></li><li><a href="/notes/variables/">Variables</a></li><li><a href="/notes/expressions-and-statements/">Statements, Expressions and Operators</a></li><li><a href="/notes/conditions-and-branching/">Conditions and Branching</a></li><li><a href="/notes/iteration/">Iteration</a></li><li><a href="/notes/pseudocode/">Pseudocode and Comments</a></li></ul>
+        <a href="/about/">About</a>
+    </nav>
+
+    <div class="content">
+        <h2>Pseudocode</h2>
+<p>So far, we’ve seen examples of programming, but these aren’t a real programming language. They borrow bits and pieces from real programming languages, and are simplified slightly from a real programming language. They’re not really code, they’re a sort-of code.</p>
+<p>Writing in pseudocode can be helpful. It allows us to problem solve without getting caught up in language specifics, and to think about generic programming ideas and structures rather than details.</p>
+<p>There are no real syntax/grammar rules for pseudocode. We write our instructions for what we want to accomplish in something between plain English and the programming language we intend to use.</p>
+<p>Pseudocode and comments might be interchangeable.</p>
+<p>We iterate our design, moving from pseudocode to real code on each iteration.</p>
+<h2>Commenting</h2>
+<p>We have already mentioned the idea of writing clear code - we discussed the idea that variables should be named appropriately. This applies to all the times we get to name something in our code.</p>
+<p>We can also add comments to our code. These are additions to our code that are not run, but are included for us as authors/readers to help us understand the intention (the why) of the code. We don’t comment what the code is doing, in an ideal world this is clear from the code itself.</p>
+<p>Comments are usually denoted by a particular marker or symbol</p>
+<ul>
+<li>// or /_ … _/ or # or &lt;!-- -&gt;</li>
+</ul>
+<p>This depends on the language we’re writing in.</p>
+<p>We can write single small comments in a line of code, or larger comments about entire sections. There are also documentation comments (doc comments) and tests as documentation.</p>
+<pre><code>set B = 3
+set A = 5
+// A needs to match B for reasons
+while A &gt; B
+   print(A)
+   set A = A - 1
+</code></pre>
+
+        <div class="nextprev"><p class="previous">Previous: <a href="/notes/iteration/">Iteration</a></p>
+        </div>
+        <div class="comments">
+            <script src="https://utteranc.es/client.js"
+            repo="martinjc/programming-intro"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+            </script>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+document.querySelectorAll('.answer-block').forEach(d => {
+    d.addEventListener('click', (e) => {
+        d.querySelector('.feedback').classList.toggle('hidden');
+        d.classList.toggle('selected');
+    });
+});
+</script>
+    
+  </body>
+</html>

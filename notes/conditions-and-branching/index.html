@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Conditions and Branching</title>
+
+    <meta name="description" content="">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#d3374a">
+
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Conditions and Branching">
+    <meta property="og:site_name" content="Introduction to Programming">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:author" content="Martin Chorley">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@martinjc">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="Conditions and Branching">
+
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Scope+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css">
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</head>
+  <body>
+    <header>
+</header>
+    <header>
+    <h1> <a href="">
+            Conditions and Branching
+        </a></h1>
+</header>
+
+<div class="container">
+    <nav class="sidebar">
+        <a href="/">Home</a>
+        <ul><li><a href="/notes/">Programming</a></li><li><a href="/notes/learning-to-program/">Learning to Program</a></li><li><a href="/notes/variables/">Variables</a></li><li><a href="/notes/expressions-and-statements/">Statements, Expressions and Operators</a></li><li><a href="/notes/conditions-and-branching/">Conditions and Branching</a></li><li><a href="/notes/iteration/">Iteration</a></li><li><a href="/notes/pseudocode/">Pseudocode and Comments</a></li></ul>
+        <a href="/about/">About</a>
+    </nav>
+
+    <div class="content">
+        <p>It is useful to have some values that either <strong>are</strong> or <strong>aren’t</strong>.</p>
+<ul>
+<li>yes/no</li>
+<li>on/off</li>
+<li>1/0</li>
+<li>true/false</li>
+</ul>
+<p>True and false are most often used for this. They are commonly know as bool or boolean values.</p>
+<h2>Boolean expressions</h2>
+<p>We can write Boolean expressions which result in either a true or false value</p>
+<ul>
+<li>is variable A greater than variable B?</li>
+<li>is this String equal to that String value?</li>
+<li>is this value contained inside this list?</li>
+<li>are these two things equal?</li>
+</ul>
+<p>Typically we use comparison operators to construct these expressions. For example, to see if the value in one variable is greater than the value in another variable:</p>
+<pre><code>set B = 3
+set A = 5
+print(A &lt; B)
+</code></pre>
+<p>or to compare if the values stored in two variables are equal:</p>
+<pre><code>set B = 3
+set A = 5
+print(A == B)
+</code></pre>
+<h3>Comparison operators</h3>
+<p>Comparison operators might include:</p>
+<ul>
+<li>less than (&lt;) and less than or equal to (&lt;=)</li>
+<li>greater than (&gt;) and greater than or equal to (&gt;-)</li>
+<li>equal to (==) and not equal to (!=)</li>
+</ul>
+<p>Which operators are available and how we write them may depend on the details of the programming language we are using, but the general idea of how they work should stay the same from language to language.</p>
+<h2>Branching</h2>
+<p>If we know if something is true or false, we can change what our code does in each situation. This is called branching and it allows our program to run different parts depending on the result of a boolean expression</p>
+<p>INSERT IMAGE HERE</p>
+<p>These are known as conditional statements. <code>if</code> is commonly used as the main conditional statement, typically with else used to add additional branches. Occasionally a statement like <code>switch</code> may be available which also allows branching, but we’ll focus on <code>if</code> for now.</p>
+<pre><code>set B = 3
+set A = 5
+if A &lt; B
+    print(&quot;foo&quot;)
+else
+    print(&quot;bar&quot;)
+</code></pre>
+<p>We can add further conditional branching with more boolean expressions</p>
+<pre><code>set B = 3
+set A = 5
+if A &lt; B
+    print(&quot;foo&quot;)
+else if A &gt; B
+    print(&quot;bar&quot;)
+else
+    print(&quot;bee&quot;)
+</code></pre>
+<h2>Logical operators</h2>
+<p>We can combine boolean expressions using logical operators.</p>
+<ul>
+<li>and/&amp;&amp;/&amp; - both expressions must be true</li>
+<li>or/||/| - either expression can be true</li>
+</ul>
+<p>Which operators are available and how we write them will depend on the details of the programming language we are using, but the general principles of how they work will usually be the same</p>
+<pre><code>set B = 3
+set A = 1
+if A &lt; B or A &gt; B
+    print(&quot;foo&quot;)
+else
+    print(&quot;bar&quot;)
+</code></pre>
+<p>We can negate boolean expressions using the logical operator not/!. ‘not’ or ‘!’ flips true to false, and vice versa.</p>
+<pre><code>set B = 3
+set A = 1
+if !(A &lt; B)
+    print(&quot;foo&quot;)
+else
+    print(&quot;bar&quot;)
+</code></pre>
+
+        <div class="nextprev"><p class="next">Next: <a href="/notes/iteration/">Iteration</a></p><p class="previous">Previous: <a href="/notes/expressions-and-statements/">Statements, Expressions and Operators</a></p>
+        </div>
+        <div class="comments">
+            <script src="https://utteranc.es/client.js"
+            repo="martinjc/programming-intro"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+            </script>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+document.querySelectorAll('.answer-block').forEach(d => {
+    d.addEventListener('click', (e) => {
+        d.querySelector('.feedback').classList.toggle('hidden');
+        d.classList.toggle('selected');
+    });
+});
+</script>
+    
+  </body>
+</html>

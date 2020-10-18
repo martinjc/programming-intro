@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Variables</title>
+
+    <meta name="description" content="">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#d3374a">
+
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Variables">
+    <meta property="og:site_name" content="Introduction to Programming">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:author" content="Martin Chorley">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@martinjc">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="Variables">
+
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Scope+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css">
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</head>
+  <body>
+    <header>
+</header>
+    <header>
+    <h1> <a href="">
+            Variables
+        </a></h1>
+</header>
+
+<div class="container">
+    <nav class="sidebar">
+        <a href="/">Home</a>
+        <ul><li><a href="/notes/">Programming</a></li><li><a href="/notes/learning-to-program/">Learning to Program</a></li><li><a href="/notes/variables/">Variables</a></li><li><a href="/notes/expressions-and-statements/">Statements, Expressions and Operators</a></li><li><a href="/notes/conditions-and-branching/">Conditions and Branching</a></li><li><a href="/notes/iteration/">Iteration</a></li><li><a href="/notes/pseudocode/">Pseudocode and Comments</a></li></ul>
+        <a href="/about/">About</a>
+    </nav>
+
+    <div class="content">
+        <p>When we are programming, we need to remember ‘something’; a ‘<strong>value</strong>’.</p>
+<p>This might be a letter, or a number. Or perhaps a sequence of letters. It might be the concept of ‘true’ or the concept of nothing. It is some data, and it is a thing that we need to remember and use in our program.</p>
+<p>So we store it in a <strong>variable</strong>.</p>
+<h2>Two analogies</h2>
+<p>There is an often applied analogy that a variable is like a box, with a label on it. If I need to store a value I can put it in my box, and whenever I want to retrieve that value I can go and find the box with the right label on it and look inside and get my value back out again.</p>
+<p>This analogy is mostly rubbish, for the following reasons:</p>
+<ol>
+<li>Boxes can hold loads of things, depending on the size of the box. I have a box next to me that contains a broken mouse, a bit of blutac and a small lego figure made by my child. Variables only hold one thing at a time<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></li>
+<li>If I take a thing out of the box, the box no longer holds the thing. If I read the value in a variable, the value still exists inside the variable, and I can go back later and check on it<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></li>
+</ol>
+<p>Another analogy for a variable is that it is like a chalk slate. We can write a value on the slate, and whenever we look at the slate we will see that value again. If we want, we can rub the value off the slate and replace it. This is a better analogy, as variables do work a bit more like chalk slates than boxes. However it neglects the concept of a label, and really, who would label a slate?</p>
+<h2>Variables are variables</h2>
+<p>They’re a bit like a box with a label, that acts like a chalk slate. If that’s not a confusing tortured analogy to ruin the life of a newcomer to programming I don’t know what is.</p>
+<h3>Things to remember about variables</h3>
+<ol>
+<li>You can store <strong>exactly one thing</strong> in a variable<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup></li>
+<li>Variables have no concept of history. They remember their current value and that’s it.</li>
+<li>Variables cannot <em>do</em> anything on their own</li>
+</ol>
+<h2>Types</h2>
+<p>Variables can hold different <strong>type</strong>s of <strong>value</strong>.</p>
+<ul>
+<li>a whole number (an integer, int, long)</li>
+<li>a decimal number (a float, a double)</li>
+<li>a single character (a char)</li>
+<li>a set of characters (a string)</li>
+<li>the values of true or false (a bool, a boolean)</li>
+<li>the concept of nothing (none, null, undefined)</li>
+</ul>
+<p>A variable might hold a more complicated ‘thing’ that is made up of other types of things.</p>
+<ul>
+<li>a sequence of types (array, list)</li>
+<li>a store of key:value pairs (dict)</li>
+<li>a complex Object</li>
+</ul>
+<p>Sometimes a variable will need to know what type of data it will store ahead of you actually storing that type of data in it. Sometimes it doesn’t, and you can create a variable without the variable needing to know exactly what type of data it will store. This depends on the programming language you use.</p>
+<h2>Assigning and Accessing Values</h2>
+<p>When we put a value inside a variable, we call it ‘<strong>assignment</strong>’. Then we can use the label for a variable to read the value it stores. Reading is non-destructive, it does not remove the value from inside the variable. Assigning a value is destructive, it will replace any existing value inside the variable.</p>
+<p>It is generally good practice to <strong>assign</strong> a <strong>value</strong> to a <strong>variable</strong> when it is declared, though this is not actually necessary in all programming languages. In some languages we can <strong>define</strong> or <strong>create</strong> variables without assigning a value to them. These languages will often have a special type of value that represents the value in these ‘empty’ variables.</p>
+<p>Sometimes, depending on the language and the type of variable you have created it is not possible to assign a new value to an existing variable. Sometimes, it is.</p>
+<p>Sometimes, once we have told a variable it will store a certain <strong>type</strong> of <strong>value</strong>, it can only ever store that type of value. Sometimes a variable can change the type of value it stores. Again, this depends on the programming language we are using and the type of variable we have created.</p>
+<h2>Notation</h2>
+<p>Often (though again, this depends on the programming language you use), declaring and assigning variables looks similar to mathematics. There are a lot of <code>=</code> signs flying around, and it can look like we are suggesting or checking that two things are equal. This is not the case.</p>
+<p>Let’s work with a generic programming language where we use the <code>set</code> keyword to <strong>declare</strong> or <strong>define</strong> a variable and <code>=</code> to <strong>assign</strong> a <strong>value</strong>. We could therefore declare and assign a value to a variable like so:</p>
+<pre><code>set A = 3
+</code></pre>
+<p>In this example we declare a variable with the name (or label, or identifier) ‘A’ and assign it the value 3. To use the box analogy we have created a box, written the label ‘A’ on the outside, and put the value ‘3’ inside. It is important to note that where we use <code>=</code> we are assigning a value, not checking for equality.</p>
+<h2>Replacing a value</h2>
+<p>We could have some code like this:</p>
+<pre><code>set A = 3
+set A = 4
+</code></pre>
+<p>Here we declare a variable called ‘A’ and assign the value 3 to it. We then re-declare the variable and assign it the value 4. The variable ‘A’ will now contain the value ‘4’ and will have no memory or rememberance of ever storing the value ‘3’.</p>
+<h2>Reading a value</h2>
+<p>We could have some code like this:</p>
+<pre><code>set A = 3
+set B = A
+</code></pre>
+<p>Here, we declare a variable called ‘A’ and assign the value 3 to it. We then declare a variable called ‘B’, and assign it the same value as is found in the variable ‘A’. It is important to note that we are not pointing A and B at the same value ‘3’. We are reading the value in ‘A’ and assigning a copy to ‘B’. The two variables are fundamentally different things, and are not linked in any way, save for them containing copies of the same value. We could do this:</p>
+<pre><code>set A = 3
+set B = A
+set B = 5
+</code></pre>
+<p>The variable ‘A’ would still contain the value ‘3’, while ‘B’ would contain the value ‘5’.</p>
+<h2>Expressions</h2>
+<p>We will see more about expressions in a moment, but it is perfectly possible to see code like this:</p>
+<pre><code>set A = 3 + 6
+</code></pre>
+<p>Here we calculate the result of the mathematical expression on the right hand side (which will be ‘9’) and assign this to our variable named ‘A’. We are not assigning the expression itself; ‘A’ will have no knowledge that there was ever a ‘3’, a ‘6’ or even the addition operator ‘+’ involved in calculating its stored value, it only knows the result: ‘9’.</p>
+<p>These expressions may even read from and write to the same variable:</p>
+<pre><code>set A = 3
+set A = A + 1
+</code></pre>
+<p>In this example, we assign a variable named ‘A’ the value ‘3’ as we have many times before. We then read the value in ‘A’, add 1 to it, and assign the result back into the variable ‘A’. ‘A’ will now contain the value ‘4’. This is fundamentally the same as this:</p>
+<pre><code>set A = 3
+set B = A + 1
+set A = B
+</code></pre>
+<p>By reading from and assigning to ‘A’ directly in the first example we eliminate the need for the intermediate variable ‘B’.</p>
+<h2>Naming variables</h2>
+<p>Naming variables is important. Do not use single letter variable names as I have done above<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup> unless you are explicitly dealing with mathematical concepts where it might make sense (x, y, π). Use verbose and meaningful names as they will make your code easier to understand now, (and probably more importantly in twelve weeks time when you have forgotten how and why you chose that name).</p>
+<pre><code>set Temp = 88
+</code></pre>
+<p>‘Temp’ is a terrible name for a variable for example. Is it ‘temporary’ or ‘temperature’ or ‘temporal’? Do you know now, and will you remember in six months time when you need to change the code and you’re on a deadline and nothing is working right?</p>
+<h2>Conclusion</h2>
+<p>We store different <strong>type</strong>s of <strong>data</strong> in <strong>variables</strong>. Variables have a <strong>name</strong>/<strong>label</strong>/<strong>identifier</strong> that lets us <strong>assign</strong> values to them, and this <strong>name</strong> allows us to <strong>read</strong> those values back again later, or change the value that is stored in the variable.</p>
+<p>Variables are like a box with a label, that is like a slate, but also not quite either really.</p>
+<h2>Quiz!</h2>
+<p>Check your knowledge from this section by answering the questions below. Click on the answer you believe to be correct for each question to see if you are <span class="correct explainer">right</span> or <span class="incorrect explainer">wrong</span>!</p>
+<div class="question-block" id="q-block0">
+<p class="question" id="q0">How many 'things' can a variable store at any one time?</p>
+<div class="answer-block" id="a-block0" data-correct="true">
+<p class="answer" id="a0">1</p>
+<p class="feedback hidden">Yes, correct! A variable can store a single thing at any one time. That 'thing' may be a complex item made up of other things, but it is still only one single thing as far as the variable is concerned.</p>
+</div>
+<div class="answer-block" id="a-block1" data-correct="false">
+<p class="answer" id="a1">10</p>
+<p class="feedback hidden">No, sorry, that's incorrect. A variable does not store exactly 10 things at a time. Computers rarely deal with things in lots of ten as they tend to work in binary rather than decimal. 8, 64, or other values that are a power of 2 are more common to see as answers</p>
+</div>
+<div class="answer-block" id="a-block2" data-correct="false">
+<p class="answer" id="a2">infinite</p>
+<p class="feedback hidden">No, sorry, that's incorrect. Each data item we store in a variable takes up an amount of the computers available memory. To store an infinite number of values in a variable we would need a computer with infinite memory. This does not currently exist.</p>
+</div>
+</div>
+<div class="question-block" id="q-block1">
+<p class="question" id="q1">If we declare a variable and assign it a value using an expression, it ...</p>
+<div class="answer-block" id="a-block0" data-correct="false">
+<p class="answer" id="a0">stores the expression and evaluates it each time we need to read the value of the variable</p>
+<p class="feedback hidden">No, sorry, not in general. Although some programming languages may store expressions in variables, in most the expression is evaluated and then it is the result of the expression that is stored.</p>
+</div>
+<div class="answer-block" id="a-block1" data-correct="true">
+<p class="answer" id="a1">stores the result of the expression *after* it has been evaluated</p>
+<p class="feedback hidden">Yes, correct, well done! The expression will be evaluated and the result stored in the variable. The variable will have no memory or awareness of the expression itself.</p>
+</div>
+</div>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>That one thing might be made up of lots of other things, but we’ll gloss over that for now. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>The analogy works better if we’re looking inside the box to see what’s in there, but that’s not how we described it initially. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>That one thing might be made up of lots of other things, but we’ll gloss over that for now. Is there an echo in here? <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn4" class="footnote-item"><p>This will not be the last time I write ‘do as I say, not as I do’. <a href="#fnref4" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+        <div class="nextprev"><p class="next">Next: <a href="/notes/expressions-and-statements/">Statements, Expressions and Operators</a></p><p class="previous">Previous: <a href="/notes/learning-to-program/">Learning to Program</a></p>
+        </div>
+        <div class="comments">
+            <script src="https://utteranc.es/client.js"
+            repo="martinjc/programming-intro"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+            </script>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+document.querySelectorAll('.answer-block').forEach(d => {
+    d.addEventListener('click', (e) => {
+        d.querySelector('.feedback').classList.toggle('hidden');
+        d.classList.toggle('selected');
+    });
+});
+</script>
+    
+  </body>
+</html>

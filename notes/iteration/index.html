@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Iteration</title>
+
+    <meta name="description" content="">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#d3374a">
+
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Iteration">
+    <meta property="og:site_name" content="Introduction to Programming">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:author" content="Martin Chorley">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@martinjc">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="Iteration">
+
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Scope+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css">
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</head>
+  <body>
+    <header>
+</header>
+    <header>
+    <h1> <a href="">
+            Iteration
+        </a></h1>
+</header>
+
+<div class="container">
+    <nav class="sidebar">
+        <a href="/">Home</a>
+        <ul><li><a href="/notes/">Programming</a></li><li><a href="/notes/learning-to-program/">Learning to Program</a></li><li><a href="/notes/variables/">Variables</a></li><li><a href="/notes/expressions-and-statements/">Statements, Expressions and Operators</a></li><li><a href="/notes/conditions-and-branching/">Conditions and Branching</a></li><li><a href="/notes/iteration/">Iteration</a></li><li><a href="/notes/pseudocode/">Pseudocode and Comments</a></li></ul>
+        <a href="/about/">About</a>
+    </nav>
+
+    <div class="content">
+        <p>Sometimes we might want to repeat some code a number of times…</p>
+<ul>
+<li>twice</li>
+<li>five times</li>
+<li>a thousand times</li>
+<li>as many times as necessary until some condition becomes true</li>
+</ul>
+<p>Rather than write the same code over and over we can instead loop our code. This will repeat our code as many times as we want/need. This repetition is called iteration. Depending on the details of the programming language, we can use many different types of loop to iterate over our code.</p>
+<h2>While loop</h2>
+<p>A common type of loop runs while some expression is true; this is often called a ‘while’ loop (or a do … while loop)</p>
+<pre><code>set B = 3
+set A = 5
+while A &gt; B
+    print(A)
+    set A = A - 1
+</code></pre>
+<h2>for loop</h2>
+<p>Another common loop runs based on some counter. This will run for a fixed number of iterations, and is often called a ‘for’ loop</p>
+<pre><code>set A = 5
+for a = 0, a &lt; A, a++
+    print(a)
+</code></pre>
+
+        <div class="nextprev"><p class="next">Next: <a href="/notes/pseudocode/">Pseudocode and Comments</a></p><p class="previous">Previous: <a href="/notes/conditions-and-branching/">Conditions and Branching</a></p>
+        </div>
+        <div class="comments">
+            <script src="https://utteranc.es/client.js"
+            repo="martinjc/programming-intro"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+            </script>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+document.querySelectorAll('.answer-block').forEach(d => {
+    d.addEventListener('click', (e) => {
+        d.querySelector('.feedback').classList.toggle('hidden');
+        d.classList.toggle('selected');
+    });
+});
+</script>
+    
+  </body>
+</html>
