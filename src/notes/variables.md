@@ -10,6 +10,8 @@ This might be a letter, or a number. Or perhaps a sequence of letters. It might 
 
 So we store it in a **variable**.
 
+{% panopto "3d3bf1b0-a595-47b0-9ce2-ac5a00ca2072" %}
+
 ## Two analogies
 
 There is an often applied analogy that a variable is like a box, with a label on it. If I need to store a value I can put it in my box, and whenever I want to retrieve that value I can go and find the box with the right label on it and look inside and get my value back out again.
@@ -141,7 +143,7 @@ set Temp = 88
 
 ## Conclusion
 
-We store different **type**s of **data** in **variables**. Variables have a **name**/**label**/**identifier** that lets us **assign** values to them, and this **name** allows us to **read** those values back again later, or change the value that is stored in the variable. 
+We store different **type**s of **data** in **variables**. Variables have a **name**/**label**/**identifier** that lets us **assign** values to them, and this **name** allows us to **read** those values back again later, or change the value that is stored in the variable.
 
 Variables are like a box with a label, that is like a slate, but also not quite either really.
 

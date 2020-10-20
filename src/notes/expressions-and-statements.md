@@ -4,6 +4,8 @@ title: "Statements, Expressions and Operators"
 order: 4
 ---
 
+{% panopto "d0c97d0a-102a-4dcb-b5e8-ac5a00ca1f40" %}
+
 ## Statements
 
 We need to write code that **does something**

@@ -4,6 +4,8 @@ order: 5
 title: Conditions and Branching
 ---
 
+{% panopto "a74c66ce-cbcf-4074-9a26-ac5a00ca2145" %}
+
 It is useful to have some values that either **are** or **aren't**.
 
 -   yes/no

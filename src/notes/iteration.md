@@ -4,12 +4,14 @@ order: 6
 title: Iteration
 ---
 
+{% panopto "4a3ccd16-26a5-4879-9998-ac5a00ca1cde" %}
+
 Sometimes we might want to repeat some code a number of times...
 
-* twice
-* five times
-* a thousand times
-* as many times as necessary until some condition becomes true
+-   twice
+-   five times
+-   a thousand times
+-   as many times as necessary until some condition becomes true
 
 Rather than write the same code over and over we can instead loop our code. This will repeat our code as many times as we want/need. This repetition is called iteration. Depending on the details of the programming language, we can use many different types of loop to iterate over our code.
 

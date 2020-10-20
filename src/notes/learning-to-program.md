@@ -10,6 +10,8 @@ You may breeze through the fundamentals of programming handling these ideas with
 
 If you're happy with "don't panic" as an explanation, feel free to skip on to the next bit. If you're interested in why you don't need to panic, read on. If you'll permit us a short diversion into educational theory, there's a couple of things to think about that might help reassure you if you're finding learning to program a bit challenging.
 
+{% panopto "b0a255d0-4ca4-4571-b762-ac5a00ca1fe9" %}
+
 ## Threshold Concepts
 
 As with all things academic there is still some debate about the nature of what a 'Threshold concept' (Meyer and Land, 2003)[^ref-meyer-land] as applied to programming _really is_, but in general these are ideas that tend to be:
