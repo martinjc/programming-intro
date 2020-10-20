@@ -56,7 +56,7 @@ Sometimes a variable will need to know what type of data it will store ahead of 
 
 When we put a value inside a variable, we call it '**assignment**'. Then we can use the label for a variable to read the value it stores. Reading is non-destructive, it does not remove the value from inside the variable. Assigning a value is destructive, it will replace any existing value inside the variable.
 
-It is generally good practice to **assign** a **value** to a **variable** when it is declared, though this is not actually necessary in all programming languages. In some languages we can **define** or **create** variables without assigning a value to them. These languages will often have a special type of value that represents the value in these 'empty' variables.
+It is generally good practice to **assign** a **value** to a **variable** when it is declared, though this is not actually necessary in all programming languages. In some languages we can **define** or **create** variables without assigning a value to them. These languages will often include a type of value that represents the value in these 'empty' variables.
 
 Sometimes, depending on the language and the type of variable you have created it is not possible to assign a new value to an existing variable. Sometimes, it is.
 
