@@ -34,7 +34,15 @@ p {
     font-size: $very-small-font-size;
 }
 
+.footnote-item {
+    font-size: $very-small-font-size;
+}
+
 strong {
     font-weight: bold;
     color: $contrast-color;
+}
+
+small {
+    font-size: $very-small-font-size;
 }
