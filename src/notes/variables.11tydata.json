@@ -1,0 +1,39 @@
+{
+    "questions":[
+        {
+            "question": "How many 'things' can a variable store at any one time?",
+            "answers": [
+                {
+                    "answer": 1,
+                    "correct": "true",
+                    "feedback": "Yes, correct! A variable can store a single thing at any one time. That 'thing' may be a complex item made up of other things, but it is still only one single thing as far as the variable is concerned."
+                },
+                {
+                    "answer": 10,
+                    "correct": "false",
+                    "feedback": "No, sorry, that's incorrect. A variable does not store exactly 10 things at a time. Computers rarely deal with things in lots of ten as they tend to work in binary rather than decimal. 8, 64, or other values that are a power of 2 are more common to see as answers"
+                },
+                {
+                    "answer": "infinite",
+                    "correct": "false",
+                    "feedback": "No, sorry, that's incorrect. Each data item we store in a variable takes up an amount of the computers available memory. To store an infinite number of values in a variable we would need a computer with infinite memory. This does not currently exist."
+                }
+            ]
+        },
+        {
+            "question": "If we declare a variable and assign it a value using an expression, it ...",
+            "answers": [
+                {
+                    "answer": "stores the expression and evaluates it each time we need to read the value of the variable",
+                    "correct": "false",
+                    "feedback": "No, sorry, not in general. Although some programming languages may store expressions in variables, in most the expression is evaluated and then it is the result of the expression that is stored."
+                },
+                {
+                    "answer": "stores the result of the expression *after* it has been evaluated",
+                    "correct": "true",
+                    "feedback": "Yes, correct, well done! The expression will be evaluated and the result stored in the variable. The variable will have no memory or awareness of the expression itself."
+                }
+            ]
+        }
+    ]
+}

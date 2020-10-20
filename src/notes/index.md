@@ -8,9 +8,9 @@ Programming is the task of writing a set of **clear instructions** to make a com
 
 We usually write these instructions in a programming language (or code). In 'high-level' programming languages this code may be quite similar to written English. In 'low-level' languages this code may be quite strange and alien, and different from a language that we can read in a straighforward manner.
 
-Programming languages (or code) are usually compiled to a low level language that the computer can understand, or to an intermediate language that is interpreted by some other program.
+Programming languages (or code) are usually compiled from a high-level language to a low-level language that the computer can understand, or to an intermediate language that is interpreted by some other program. It is possible to write programs directly in a low-level language, but we don't usually do this unless we enjoy pain. The easier the high-level language is to understand, the easier it will be for us to write clear instructions that we can understand, which helps to make the code more maintainable. 
 
-It is important when we write code that we make the instructions as clear as possible. Despite their sophistication and shinyness, and even with over 75 years of programming as a field[^1], Computers really are not clever.
+It is important when we write code that we make the instructions for the computer as clear as possible. Despite their sophistication and shinyness, and even with over 75 years of programming as a field[^1], Computers really are not clever.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Today Year 2 learnt the importance of making instructions really clear and easy to follow. Who knew making a jam sandwich would be so difficult?🤷🏼‍♀️🥪 <a href="https://twitter.com/hashtag/instructions?src=hash&amp;ref_src=twsrc%5Etfw">#instructions</a> <a href="https://twitter.com/hashtag/Year2?src=hash&amp;ref_src=twsrc%5Etfw">#Year2</a> <a href="https://t.co/vjM46RYOkO">pic.twitter.com/vjM46RYOkO</a></p>&mdash; MissReeves (@MissReeeves) <a href="https://twitter.com/MissReeeves/status/1313587567137370113?ref_src=twsrc%5Etfw">October 6, 2020</a></blockquote>
 

@@ -4,7 +4,7 @@ title: "Learning to Program"
 order: 2
 ---
 
-Before we start learning how to code, let's talk about the _process of learning to code_. Some people will find this straightforward. Some will find it hard. Your experience of this may be at either end of this spectrum, or it may fall somewhere in the middle. The important thing to know is that whatever your experience, it is fine and normal.
+Before we start learning how to code, let's talk about the _process of learning to code_. Some people will find this process straightforward. Some will find this process hard. Your experience of this process may be at either end of this spectrum, or it may fall somewhere in the middle. The important thing to know is that whatever your experience, it is fine and normal to feel however you feel about learning to program.
 
 You may breeze through the fundamentals of programming handling these ideas with ease, fully grasping the concept of recursion with barely a moments thought, and ploughing straight through the notions of object orientation as if it makes complete sense. If this is the case, great! However, you may find yourself at 2 a.m. staring at the code for a `for` loop wondering what on earth iteration really is. If this is the case, don't panic.
 
@@ -12,7 +12,7 @@ If you're happy with "don't panic" as an explanation, feel free to skip on to th
 
 ## Threshold Concepts
 
-As with all things academic there is still some debate about the nature of what a 'Threshold concept' (Meyer and Land, 2003)[^ref-meyer-land] as applied to programming is, but in general these are ideas that tend to be:
+As with all things academic there is still some debate about the nature of what a 'Threshold concept' (Meyer and Land, 2003)[^ref-meyer-land] as applied to programming _really is_, but in general these are ideas that tend to be:
 
 -   Troublesome - they can be hard to understand or make sense of
 -   Counterintuitive - they can run contrary to your current understanding
@@ -20,9 +20,9 @@ As with all things academic there is still some debate about the nature of what 
 -   Transformative - they open up new realms of knowledge once they are understood
 -   Irreversible - once you grasp these concepts you are unlikely to forget them or go back to a previous level of understanding
 
-It is understood that the field of programming is littered with ideas that fit the definition of 'threshold concepts'. This means that there may be many ideas that you come across while learning to program that you may struggle to get to grips with, that seem to run counter to the way you understand the world, but that once you **do** grasp them suddenly make everything make sense, that transform your worldview and open up the doorway to the next phase of learning.
+It is generally understood[^ref-academia] that the field of programming is littered with ideas that fit the definition of 'threshold concepts'. This means that there may be many ideas that you come across while learning to program that you may struggle to get to grips with, that seem to run counter to the way you understand the world, but that once you **do** grasp them suddenly make everything make sense, that transform your worldview and open up the doorway to the next phase of learning.
 
-I tell you that the field is littered with these hurdles not in an effort to put you off, but in the hope that you will recognise these concepts when you come across them, and that this will diminish your concern. If you are struggling to understand the notion of recursion, it is not that you are particularly unintelligent, but that the notion of recursion is a 'threshold' concept, and it may take some time, some effort, and perhaps some further explanation and reflection in order for you to make the particular breakthrough at which it becomes clear and you can move on.
+I tell you that the field is littered with these hurdles not in an effort to put you off, but in the hope that you will recognise these concepts when you come across them, and that this will reduce your concern. For example: if you are struggling to understand the notion of recursion, it is not that you are unintelligent, but that the notion of recursion is a 'threshold' concept, and it may take some time, some effort, and perhaps some further explanation and reflection in order for you to make the particular breakthrough at which it becomes clear and you can move on.
 
 ## Difficulties with Learning to Program
 
@@ -51,3 +51,4 @@ The bad news: there is no silver bullet. I cannot promise that you will read thi
 [^ref-du-boulay]: Benedict Du Boulay (1986) “Some difficulties of learning to program”. Journal of Educational Computing Research, Vol 2(1) pg 57. DOI 10.219/3LFX-9RRF-67T8-UVK9
 [^1]: This is essentially Social Constructivism, another bit of educational theory
 [^2]: This is essentially Connectivism, another bit of educational theory
+[^ref-academia]: again, as much as anything is ever really understood and agreed upon in education
