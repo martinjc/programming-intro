@@ -43,15 +43,14 @@
         </a></h1>
 </header>
 
-<div class="container">
-    <nav class="sidebar">
-        <a href='/programming-intro/'>Home</a>
-        <ul><li><a href="/programming-intro/notes/">Programming</a></li><li><a href="/programming-intro/notes/learning-to-program/">Learning to Program</a></li><li><a href="/programming-intro/notes/variables/">Variables</a></li><li><a href="/programming-intro/notes/expressions-and-statements/">Statements, Expressions and Operators</a></li><li><a href="/programming-intro/notes/conditions-and-branching/">Conditions and Branching</a></li><li><a href="/programming-intro/notes/iteration/">Iteration</a></li><li><a href="/programming-intro/notes/pseudocode/">Pseudocode and Comments</a></li></ul>
-        <a href="/programming-intro/about/">About</a>
-    </nav>
+<nav class="sidebar">
+    <a href="/">Home</a>
+    <ul><li><a href="/notes/">Programming</a></li><li><a href="/notes/learning-to-program/">Learning to Program</a></li><li><a href="/notes/variables/">Variables</a></li><li><a href="/notes/expressions-and-statements/">Statements, Expressions and Operators</a></li><li><a href="/notes/conditions-and-branching/">Conditions and Branching</a></li><li><a href="/notes/iteration/">Iteration</a></li></ul>
+    <a href="about/">About</a>
+</nav>
 
-    <div class="content">
-        <p>It is useful to have some values that either <strong>are</strong> or <strong>aren’t</strong>.</p>
+<div class="content">
+    <p>It is useful to have some values that either <strong>are</strong> or <strong>aren’t</strong>.</p>
 <ul>
 <li>yes/no</li>
 <li>on/off</li>
@@ -84,7 +83,7 @@ print(A == B)
 <li>greater than (&gt;) and greater than or equal to (&gt;-)</li>
 <li>equal to (==) and not equal to (!=)</li>
 </ul>
-<p>Which operators are available and how we write them may depend on the details of the programming language we are using, but the general idea of how they work should stay the same from language to language.</p>
+<p>Which operators are available and how we write them may depend on the details of the programming language we are using, but the general idea of how they work should remain the same from language to language.</p>
 <h2>Branching</h2>
 <p>If we know if something is true or false, we can change what our code does in each situation. This is called branching and it allows our program to run different parts depending on the result of a boolean expression</p>
 <p>INSERT IMAGE HERE</p>
@@ -129,29 +128,9 @@ else
     print(&quot;bar&quot;)
 </code></pre>
 
-        <div class="nextprev"><p class="next">Next: <a href="/programming-intro/notes/iteration/">Iteration</a></p><p class="previous">Previous: <a href="/programming-intro/notes/expressions-and-statements/">Statements, Expressions and Operators</a></p>
-        </div>
-        <div class="comments">
-            <script src="https://utteranc.es/client.js"
-            repo="martinjc/programming-intro"
-            issue-term="pathname"
-            theme="github-light"
-            crossorigin="anonymous"
-            async>
-            </script>
-        </div>
-        
+    <div class="nextprev"><p class="next">Next: <a href="/programming-intro/notes/iteration/">Iteration</a></p><p class="previous">Previous: <a href="/programming-intro/notes/expressions-and-statements/">Statements, Expressions and Operators</a></p>
     </div>
 </div>
-
-<script>
-document.querySelectorAll('.answer-block').forEach(d => {
-    d.addEventListener('click', (e) => {
-        d.querySelector('.feedback').classList.toggle('hidden');
-        d.classList.toggle('selected');
-    });
-});
-</script>
     
   </body>
 </html>
