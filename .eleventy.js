@@ -6,8 +6,7 @@ module.exports = function(eleventyConfig) {
     const markdownItEmoji = require("markdown-it-emoji");
     const markdownIt = require("markdown-it");
 
-
-    const insertQuestions = require("./build/questions.js");
+    const shortcodes = require("./build/shortcodes.js");
 
     const isProduction = process.env.NODE_ENV === `production`;
 
@@ -38,7 +37,8 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addFilter("sortByPageOrder", sortByPageOrder);
 
-    eleventyConfig.addShortcode("questions", insertQuestions.insertQuestions);
+    eleventyConfig.addShortcode("questions", shortcodes.insertQuestions);
+    eleventyConfig.addShortcode("panopto", shortcodes.insertPanopto);
 
     return {
       pathPrefix: isProduction ? "/programming-intro/" : '/',
