@@ -43,14 +43,15 @@
         </a></h1>
 </header>
 
-<nav class="sidebar">
-    <a href="/">Home</a>
-    <ul><li><a href="/notes/">Programming</a></li><li><a href="/notes/learning-to-program/">Learning to Program</a></li><li><a href="/notes/variables/">Variables</a></li><li><a href="/notes/expressions-and-statements/">Statements, Expressions and Operators</a></li><li><a href="/notes/conditions-and-branching/">Conditions and Branching</a></li><li><a href="/notes/iteration/">Iteration</a></li></ul>
-    <a href="about/">About</a>
-</nav>
+<div class="container">
+    <nav class="sidebar">
+        <a href='/programming-intro/'>Home</a>
+        <ul><li><a href="/programming-intro/notes/">Programming</a></li><li><a href="/programming-intro/notes/learning-to-program/">Learning to Program</a></li><li><a href="/programming-intro/notes/variables/">Variables</a></li><li><a href="/programming-intro/notes/expressions-and-statements/">Statements, Expressions and Operators</a></li><li><a href="/programming-intro/notes/conditions-and-branching/">Conditions and Branching</a></li><li><a href="/programming-intro/notes/iteration/">Iteration</a></li></ul>
+        <a href="/programming-intro/about/">About</a>
+    </nav>
 
-<div class="content">
-    <h2>Statements</h2>
+    <div class="content">
+        <h2>Statements</h2>
 <p>We need to write code that <strong>does something</strong></p>
 <ul>
 <li>create a variable</li>
@@ -135,9 +136,29 @@ set B = A++
 </code></pre>
 <p>The postfix ‘++’ operator will be applied to A <em>after</em> the value of A has been read and stored in B, so in this example A will have the value 2, but B will contain the original value of A before the postfix increment operator was applied, so will contain ‘1’.</p>
 
-    <div class="nextprev"><p class="next">Next: <a href="/programming-intro/notes/conditions-and-branching/">Conditions and Branching</a></p><p class="previous">Previous: <a href="/programming-intro/notes/variables/">Variables</a></p>
+        <div class="nextprev"><p class="next">Next: <a href="/programming-intro/notes/conditions-and-branching/">Conditions and Branching</a></p><p class="previous">Previous: <a href="/programming-intro/notes/variables/">Variables</a></p>
+        </div>
+        <div class="comments">
+            <script src="https://utteranc.es/client.js"
+            repo="martinjc/programming-intro"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+            </script>
+        </div>
+        
     </div>
 </div>
+
+<script>
+document.querySelectorAll('.answer-block').forEach(d => {
+    d.addEventListener('click', (e) => {
+        d.querySelector('.feedback').classList.toggle('hidden');
+        d.classList.toggle('selected');
+    });
+});
+</script>
     
   </body>
 </html>
