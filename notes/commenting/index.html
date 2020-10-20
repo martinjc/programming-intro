@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Commenting</title>
+
+    <meta name="description" content="">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/programming-intro/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/programming-intro/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/programming-intro/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/programming-intro/site.webmanifest">
+    <meta name="theme-color" content="#d3374a">
+
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Commenting">
+    <meta property="og:site_name" content="Introduction to Programming">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:author" content="Martin Chorley">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@martinjc">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="Commenting">
+
+    <link rel="icon" href="/programming-intro/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Scope+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/programming-intro/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css">
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</head>
+  <body>
+    <header>
+</header>
+    <header>
+    <h1> <a href="">
+            Commenting
+        </a></h1>
+</header>
+
+<div class="container">
+    <nav class="sidebar">
+        <a href='/programming-intro/'>Home</a>
+        <ul><li><a href="/programming-intro/notes/">Programming</a></li><li><a href="/programming-intro/notes/learning-to-program/">Learning to Program</a></li><li><a href="/programming-intro/notes/variables/">Variables</a></li><li><a href="/programming-intro/notes/expressions-and-statements/">Statements, Expressions and Operators</a></li><li><a href="/programming-intro/notes/conditions-and-branching/">Conditions and Branching</a></li><li><a href="/programming-intro/notes/iteration/">Iteration</a></li><li><a href="/programming-intro/notes/commenting/">Commenting</a></li><li><a href="/programming-intro/notes/pseudocode/">Pseudocode</a></li></ul>
+        <a href="/programming-intro/about/">About</a>
+    </nav>
+
+    <div class="content">
+        <p><small>If the embed below does not work here is a <a href="https://cardiff.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=5f41cf50-e1c4-4a06-a725-ac5a00ca1dc4" target="blank">link to the full version of the video</a></small></p>
+<iframe src="https://cardiff.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=5f41cf50-e1c4-4a06-a725-ac5a00ca1dc4&v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+<p>We have already discussed the need to give our variables <strong>meaningful</strong> names so that we, the humans who will read the code can make sense of what the code is trying to do. This is true whenever we are allowed to name something in a program: we should name it in such a way as to add more clarity to the code about its purpose and function.</p>
+<p>Writing clear code makes our future selves happy. When we return to a piece of code six months down the line, if it is plainly written and understandable we can update it, adapt it and maintain it with a miniumum of effort.</p>
+<p>We have another tool in our toolbox to help with making our code understandable: <strong>commenting</strong>.</p>
+<p>Comments are tiny statements of code that are not compiled or run by the machine. They are there purely for the benefit of the reader. We denote them using a particular marker or set of markers, depending on the programming language. We can write small comments about a single line of code, or larger block comments about entire sections of code.</p>
+<p>It is important to note that we should focus on commenting <strong>why</strong> our code works a certain way. The <strong>what</strong> should be understandable from reading the code. A good rule of thumb here is that if when reading your code you think it needs a comment to explain <strong>what</strong> the code is doing, that is a good sign that the code is too complicated and needs breaking down or simplifying in some way. This is the notion of self-documenting code: code that is so clear and readable that we can quickly see what it is doing and need no further explanations. If our code is this straighforward, all we need to do is document with comments the <strong>why</strong>, the reasons that we have implemented code in a certain way.</p>
+<p>You should also look at the concepts of document comments - comments that are written within code and automtically extracted to form the documentation for the code (these may often contain more of the <strong>what</strong> than ordinary comments), and you may also be interested to read about the concepts of ‘tests as documentation’, or using tests for your code to show the purpose and functionality of your code. We’ll look at these topics further in future.</p>
+
+        <div class="nextprev"><p class="next">Next: <a href="/programming-intro/notes/pseudocode/">Pseudocode</a></p><p class="previous">Previous: <a href="/programming-intro/notes/iteration/">Iteration</a></p>
+        </div>
+        <div class="comments">
+            <script src="https://utteranc.es/client.js"
+            repo="martinjc/programming-intro"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+            </script>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+document.querySelectorAll('.answer-block').forEach(d => {
+    d.addEventListener('click', (e) => {
+        d.querySelector('.feedback').classList.toggle('hidden');
+        d.classList.toggle('selected');
+    });
+});
+</script>
+    
+  </body>
+</html>
