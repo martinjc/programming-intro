@@ -142,3 +142,5 @@ set B = A++
 ```
 
 The postfix '++' operator will be applied to A _after_ the value of A has been read and stored in B, so in this example A will have the value 2, but B will contain the original value of A before the postfix increment operator was applied, so will contain '1'.
+
+{% questions questions %}
