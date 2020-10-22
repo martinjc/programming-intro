@@ -24,6 +24,21 @@
                     "feedback": "Yes, correct! An operator that operates on two operands while sitting in between them is called an 'infix' operator"
                 }
             ]
-        }
+        }, 
+        {
+            "question": "Any code we write that has some __effect__ is a ...",
+            "answers": [
+                {
+                    "answer": "statement",
+                    "correct": "true",
+                    "feedback": "Yes, well done, that's correct."
+                },
+                {
+                    "answer": "expression",
+                    "correct": "false",
+                    "feedback": "No, sorry, that's incorrect. Expressions are evaluated to produce a result."
+                }
+            ]
+        }        
     ]
 }
