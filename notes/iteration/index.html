@@ -60,9 +60,9 @@
 <li>a thousand times</li>
 <li>as many times as necessary until some condition becomes true</li>
 </ul>
-<p>Rather than write the same code over and over we can instead loop our code. This will repeat our code as many times as we want/need. This repetition is called iteration. Depending on the details of the programming language, we can use many different types of loop to iterate over our code.</p>
+<p>Rather than write the same code over and over we can instead <strong>loop</strong> our code. This will repeat our code as many times as we want/need. This repetition is called <strong>iteration</strong>. Depending on the details of the programming language, we can use many different types of loop to iterate over our code.</p>
 <h2>While loop</h2>
-<p>A common type of loop runs while some expression is true; this is often called a ‘while’ loop (or a do … while loop)</p>
+<p>A common type of loop runs while some expression is true; this is often called a <code>**while**</code> loop (or a <code>do ... while</code> loop)</p>
 <pre><code>set B = 3
 set A = 5
 while A &gt; B
@@ -75,6 +75,20 @@ while A &gt; B
 for a = 0, a &lt; A, a++
     print(a)
 </code></pre>
+<h2>infinite loops</h2>
+<p>A common issue when we start creating loops is the creation of <strong>infinite</strong> loops. These loops keep looping forever, which can block the rest of our program from running, or can cause the computer to hang, or even crash.</p>
+<p>Infinite loops commonly occur when the <strong>condition</strong> that checks whether the loop should carry on running <strong>doesn’t change</strong> in the running of the loop. This is not normally an issue for a <code>for</code> loop, but can be a problem in a <code>while</code> or a <code>do ... while</code>.</p>
+<div class="question-block" id="q-block0">
+<p class="question" id="q0">The simplest way to make our app do the same (or a similar) task over and over again is to ...</p>
+<div class="answer-block" id="a-block0" data-correct="false">
+<p class="answer" id="a0">write the same (or similar) statements over and over again in our code</p>
+<p class="feedback hidden">No, sorry, that's incorrect. We should try to minimise the amount of repeated code we write. Reuse is nearly always better than repetition</p>
+</div>
+<div class="answer-block" id="a-block1" data-correct="true">
+<p class="answer" id="a1">use some form of iteration</p>
+<p class="feedback hidden">Yes, absolutely. By abstracting out the 'similar' parts of the code and repeating these in a loop we can reduce the amount of code we need to write</p>
+</div>
+</div>
 
         <div class="nextprev"><p class="next">Next: <a href="/programming-intro/notes/commenting/">Commenting</a></p><p class="previous">Previous: <a href="/programming-intro/notes/conditions-and-branching/">Conditions and Branching</a></p>
         </div>
