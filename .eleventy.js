@@ -39,6 +39,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addShortcode("questions", shortcodes.insertQuestions);
     eleventyConfig.addShortcode("panopto", shortcodes.insertPanopto);
+    eleventyConfig.addShortcode("reponame", shortcodes.getRepoName);
 
     return {
       pathPrefix: isProduction ? "/programming-intro/" : '/',
