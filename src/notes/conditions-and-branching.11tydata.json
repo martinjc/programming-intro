@@ -19,6 +19,21 @@
                     "feedback": "No, sorry, that's incorrect."
                 }
             ]
-        }       
+        },
+        {
+            "question": "An 'if' statement must always have a matching 'else' statement?",
+            "answers": [
+                {
+                    "answer": "No",
+                    "correct": "true",
+                    "feedback": "Yes, that's correct. Well, really it depends on the programming language, but usually you can write an 'if' statement without needing to include an 'else'"
+                },
+                {
+                    "answer": "Yes",
+                    "correct": "false",
+                    "feedback": "No, sorry, that's incorrect. Well, really it depends on the programming language, but usually you can write an 'if' statement without needing to include an 'else'"
+                }
+            ]
+        }
     ]
 }
