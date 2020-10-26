@@ -24,6 +24,10 @@
     "watch:eleventy": "onchange --await-write-finish 4000 'src/**/*.njk' 'src/**/*.md' 'src/**/*.json'  -- npm run build:eleventy:dev",
     "watch:css": "onchange --await-write-finish 4000 'src/_sass/**/*.scss' -- npm run build:css:dev && npm run build:eleventy:dev"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinjc/programming-intro.git"
+  },
   "author": "Martin Chorley",
   "license": "MIT",
   "devDependencies": {
