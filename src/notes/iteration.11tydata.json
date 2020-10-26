@@ -1,0 +1,19 @@
+{
+    "questions":[
+        {
+            "question": "The simplest way to make our app do the same (or a similar) task over and over again is to ...",
+            "answers": [
+                {
+                    "answer": "write the same (or similar) statements over and over again in our code",
+                    "correct": "false",
+                    "feedback": "No, sorry, that's incorrect. We should try to minimise the amount of repeated code we write. Reuse is nearly always better than repetition"
+                },
+                {
+                    "answer": "use some form of iteration",
+                    "correct": "true",
+                    "feedback": "Yes, absolutely. By abstracting out the 'similar' parts of the code and repeating these in a loop we can reduce the amount of code we need to write"
+                }
+            ]
+        }
+    ]
+}

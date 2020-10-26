@@ -1,0 +1,39 @@
+{
+    "questions":[
+        {
+            "question": "Boolean expressions evaluate to ...",
+            "answers": [
+                {
+                    "answer": "true or false",
+                    "correct": "true",
+                    "feedback": "Yes, that's correct! Boolean expressions evaluate to either True or False"
+                },
+                {
+                    "answer": "yes/no/maybe",
+                    "correct": "false",
+                    "feedback": "No, sorry, that's incorrect. Booleans don't include the value maybe - computers tend not to deal so well with uncertainty"
+                },
+                {
+                    "answer": "a number",
+                    "correct": "false",
+                    "feedback": "No, sorry, that's incorrect."
+                }
+            ]
+        },
+        {
+            "question": "An 'if' statement must always have a matching 'else' statement?",
+            "answers": [
+                {
+                    "answer": "No",
+                    "correct": "true",
+                    "feedback": "Yes, that's correct. Well, really it depends on the programming language, but usually you can write an 'if' statement without needing to include an 'else'"
+                },
+                {
+                    "answer": "Yes",
+                    "correct": "false",
+                    "feedback": "No, sorry, that's incorrect. Well, really it depends on the programming language, but usually you can write an 'if' statement without needing to include an 'else'"
+                }
+            ]
+        }
+    ]
+}

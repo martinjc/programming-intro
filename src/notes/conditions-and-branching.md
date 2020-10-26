@@ -52,11 +52,7 @@ Which operators are available and how we write them may depend on the details of
 
 ## Branching
 
-If we know if something is true or false, we can change what our code does in each situation. This is called branching and it allows our program to run different parts depending on the result of a boolean expression
-
-INSERT IMAGE HERE
-
-These are known as conditional statements. `if` is commonly used as the main conditional statement, typically with else used to add additional branches. Occasionally a statement like `switch` may be available which also allows branching, but we'll focus on `if` for now.
+If we know if something is true or false, we can change what our code does in each situation. This is called branching and it allows our program to run different parts depending on the result of a boolean expression. These are known as conditional statements. `if` is commonly used as the main conditional statement, typically with else used to add additional branches. Occasionally a statement like `switch` may be available which also allows branching, but we'll focus on `if` for now.
 
 ```
 set B = 3
@@ -108,3 +104,5 @@ if !(A < B)
 else
     print("bar")
 ```
+
+{% questions questions %}

@@ -1,0 +1,44 @@
+{
+    "questions":[
+        {
+            "question": "If an operator sits between two values, we call it ...",
+            "answers": [
+                {
+                    "answer": "postfix",
+                    "correct": "false",
+                    "feedback": "No, sorry, that's incorrect. A postfix operator comes *after* its operand(s), not between them."
+                },
+                {
+                    "answer": "prefix",
+                    "correct": "false",
+                    "feedback": "No, sorry, that's incorrect. A prefix operator comes *before* its operand(s), not between them."
+                },
+                {
+                    "answer": "midfix",
+                    "correct": "false",
+                    "feedback": "No, sorry, that's incorrect. I just made that word up. Do you like it?"
+                },
+                {
+                    "answer": "infix",
+                    "correct": "true",
+                    "feedback": "Yes, correct! An operator that operates on two operands while sitting in between them is called an 'infix' operator"
+                }
+            ]
+        }, 
+        {
+            "question": "Any code we write that has some __effect__ is a ...",
+            "answers": [
+                {
+                    "answer": "statement",
+                    "correct": "true",
+                    "feedback": "Yes, well done, that's correct."
+                },
+                {
+                    "answer": "expression",
+                    "correct": "false",
+                    "feedback": "No, sorry, that's incorrect. Expressions are evaluated to produce a result."
+                }
+            ]
+        }        
+    ]
+}
