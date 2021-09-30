@@ -4,7 +4,7 @@ order: 7
 title: Commenting
 ---
 
-{% panopto "5f41cf50-e1c4-4a06-a725-ac5a00ca1dc4" %}
+{% panopto "ceca15cf-4efa-4e88-9c1f-adb300fbaf14" %}
 
 We have already discussed the need to give our variables **meaningful** names so that we, the humans who will read the code can make sense of what the code is trying to do. This is true whenever we are allowed to name something in a program: we should name it in such a way as to add more clarity to the code about its purpose and function.
 
