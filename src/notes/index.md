@@ -6,7 +6,7 @@ order: 1
 
 Programming is the task of writing a set of **clear instructions** to make a computer **perform some task**.
 
-We usually write these instructions in a programming language (or code). In 'high-level' programming languages this code may be quite similar to written English. In 'low-level' languages this code may be quite strange and alien, and different from a language that we can read in a straighforward manner.
+We usually write these instructions in a programming language (or code). In 'high-level' programming languages this code may be quite similar to written English. In 'low-level' languages this code may be quite strange and alien, and different from a language that we can read in a straightforward manner.
 
 Programming languages (or code) are usually compiled from a high-level language to a low-level language that the computer can understand, or to an intermediate language that is interpreted by some other program. It is possible to write programs directly in a low-level language, but we don't usually do this unless we enjoy pain. The easier the high-level language is to understand, the easier it will be for us to write clear instructions that we can understand, which helps to make the code more maintainable. 
 
